@@ -24,7 +24,6 @@ package com.dtstack.dtcenter.loader.source;
  * @Date ：Created in 10:39 2020/7/27
  * @Description：数据源基础
  */
-@Deprecated
 public enum DataBaseType {
     MySql("mysql", "com.mysql.jdbc.Driver"),
     TDDL("mysql", "com.mysql.jdbc.Driver"),
@@ -61,6 +60,7 @@ public enum DataBaseType {
     Greenplum6("Greenplum6", "com.pivotal.jdbc.GreenplumDriver"),
     Phoenix5("Phoenix5", "org.apache.phoenix.jdbc.PhoenixDriver"),
     KINGBASE8("kingbase8", "com.kingbase8.Driver"),
+    KINGBASE8V6("kingbase8v6", "com.kingbase8.Driver"),
     Presto("presto", "com.facebook.presto.jdbc.PrestoDriver", "select 1111"),
     TRINO("trino", "io.trino.jdbc.TrinoDriver", "select 1111"),
     OceanBase("oceanbase", "com.alipay.oceanbase.jdbc.Driver", "select 1111"),

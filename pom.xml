@@ -44,6 +44,7 @@
         <module>hbase2</module>
         <module>spark</module>
         <module>kingbase8</module>
+        <module>kingbase8v6</module>
         <module>common</module>
         <module>kerberos</module>
         <module>hbase_gateway</module>

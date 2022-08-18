@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.dtstack.dtcenter.common.loader.kingbase;
+package com.dtstack.dtcenter.common.loader.kingbasev6;
 
 import com.dtstack.dtcenter.common.loader.rdbms.AbsTableClient;
 import com.dtstack.dtcenter.common.loader.rdbms.ConnFactory;
@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class KingbaseTableClient extends AbsTableClient {
+public class KingbaseV6TableClient extends AbsTableClient {
 
     private static final String ADD_COLUMN_SQL = "ALTER TABLE %s ADD COLUMN %s %s";
 
@@ -39,12 +39,12 @@ public class KingbaseTableClient extends AbsTableClient {
 
     @Override
     protected ConnFactory getConnFactory() {
-        return new KingbaseConnFactory();
+        return new KingbaseV6ConnFactory();
     }
 
     @Override
     protected DataSourceType getSourceType() {
-        return DataSourceType.KINGBASE8;
+        return DataSourceType.KINGBASE8V6;
     }
 
     @Override

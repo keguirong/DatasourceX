@@ -47,6 +47,7 @@ public enum DataSourceType {
     DMDB(35, 8, "DMDB For MySQL", "dmdb"),
     RDBMS(5, 9, "RDBMS", "mysql"),
     KINGBASE8(40, 10, "KingbaseES8", "kingbase8"),
+    KINGBASE8V6(63, 11, "KingbaseES8V6", "kingbase8v6"),
     DMDB_For_Oracle(67, 8, "DMDB For Oracle", "dmdb"),
 
     // Hadoop
